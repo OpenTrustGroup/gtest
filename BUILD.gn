@@ -32,6 +32,8 @@ config("gtest_config") {
 }
 
 source_set("gtest") {
+  testonly = true
+
   sources = [
     "include/gtest/gtest-death-test.h",
     "include/gtest/gtest-message.h",
